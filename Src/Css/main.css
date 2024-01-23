@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300;1,600;1,700&display=swap');
+
+body {
+  font-family: "Martel", serif;
+  background-color:  rgba(240, 226, 200);;
+  
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.main {
+  margin-left: 240px;
+  margin-right: 6px;
+  overflow: hidden;
+
+}
+
+.head {
+  background-color: #92bfbc;
+  color: #202020;
+  text-align: center;
+  padding: 20px 20px 30px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  padding: 10px;
+  border: none;
+  width: 40%;
+  font-size: 15px;
+  outline: none;
+  border-radius: 10px 15px 15px 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+.card a { 
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.card li {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  border: 2px solid #92bfbc;
+  border-radius: 15px;
+  background-color: #202020;
+}
+
+.card li h1{
+  font-size: 25px;
+}
+
+
+.card li p {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.card li h3 {
+  font-size: 16px;
+  color: #e0e0e0;
+  text-align: start;  
+  margin-bottom: 6px;
+}
+
+
+
+
+.price {
+  color: #92bfbc;
+  font-size: 21px;
+  font-family: sans-serif;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #696969;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: all 0.4s ease;
+  border-radius: 5px;
+}
+
+.card button:hover {
+  color: #2bc0b6;
+  background-color: #fff;
+  font-size: 19px;
+}
+
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 240px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+  color: #202020;
+  border-bottom: 1px solid #202020;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 10px;
+  
+}
+
+footer ul li a {
+  color: #202020;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #202020;
+}
+
+footer ul li a:hover {
+  color: #92bfbc;
+  border-color: #92bfbc;
+
+} 
+
+
+

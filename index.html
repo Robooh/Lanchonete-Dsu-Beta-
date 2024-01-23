@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css">
+    <link rel="shortcut icon" href="Src/Assets/favicon_package_v0.16/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Src/Css/reset.css">
+    <link rel="stylesheet" href="Src/Css/nav.css">
+    <link rel="stylesheet" href="Src/Css/main.css">
+    <link rel="stylesheet" href="Src/Css/mobile.css">
+    <title>Lanchonete da Dsu</title>
+</head>
+<body>
+    <aside id="mySidebar" class="sidebar">
+     <header class="sidebar-header">
+        <img class="Logo" src="Src/Assets/imagens/192x192.png" alt="Logo">
+     </header>
+
+        <nav id="main">
+
+            <button id="link1">
+                <span>
+                    <i class="ri-menu-fill"></i>
+                    <span>Menu</span>
+                </span>
+            </button>
+
+            <button id="link2">
+                <span>
+                    <i class="ri-bread-line"></i>
+                    <span>Lanches</span>
+                </span>
+            </button>
+
+            <button id="toggle-cart">
+                <span>
+                    <i class="ri-booklet-line"></i>
+                    <span>Pedidos</span>
+                </span>
+            </button>
+
+            <div class="dev">
+                <h3>Desenvolvido por:<img src="Src/Assets/imagens/Assinatura_Robo_oh.png" title="Robs"></h3>
+            </div>
+        </nav>  
+    </aside>    
+
+    <!-- o que ta faltando e codar a versão mobile,ou seja o responsivo,e dps disso e ou tentar fazer o codigo de total do carinho funcionar,ou se não deixar apenas como uma lista que recebe o nome e o preço do produto o que e meio ou bem mal feito,e talvez procurar por algumas imagens que estão dando probblema no cartão,decidir a futuro
+        tentar estilo grid na sidebar de pedidos para que quando o cliente for ver a sidebar,ela esteja responsivas
+    -->
+
+
+<main class="main">
+    <section class="head" id="Menu">
+            <h1>Lanchonete da Dsu</h1>
+            <div class="shopping-cart" id="rightSidebar">
+            <span id="totalItems"></span>
+            <div id="cartItems"></div>
+            <div id="totalPrice"></div>
+            <button id="check-In">Confirmar Pedido</button>
+            </div>
+            <div class="search">
+                <input type="text"  id="searchInput" placeholder="O que pretende levar hoje?">
+            </div>
+           </section>
+
+           <section class="container">
+            <ul class="card" id="items">
+                <li> <a href="#item2"><img src="Src/Assets/Lunch/Cake/Cake-2.png" alt="2-cake">
+                    <h1>Moça-Churros</h1></a>
+                    <p class="price">R$21,90</p>
+                    <h3>Bolo branco, recheios de creme de churros e mousse de canela</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li><a href="#item3"><img src="Src/Assets/Lunch/Cake/Cake-4.jpg" alt="4-cake">
+                    <h1>Alpes Suíços</h1></a>
+                    <p class="price">R$49,70</p>
+                    <h3>Bolo de chocolate, recheios de mousse branca e trufado de chocolate, cobertura de mousse branca, suspiros e calda de chocolate.
+                    Serve ate 4 pessoa</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item1"><img src="Src/Assets/Lunch/Cake/Cake-1.jpg" alt="1-cake">
+                    <h1 id="nameItem">Cake-Trufado</h1></a>
+                    <p id="priceItem" class="price">R$24,35</p>
+                    <h3>Bolo de chocolate, recheios de mousse de chocolate e trufado de chocolate, cobertura de mousse de chocolate, raspas de chocolate preto, calda de chocolate e cerejas (com miniballs na lateral).</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item4"><img src="Src/Assets/Lunch/Cake/Cake-3.jpg" alt="3-cake">
+                    <h1>Lá Francesa</h1></a>
+                    <p class="price">R$51,15</p>
+                    <h3>Bolo de chocolate, recheios de brigadeiro e cocada, cobertura de mousse de chocolate, raspas de chocolate, calda de chocolate e cerejas.
+                    Serve ate 5 pessoas
+                    </h3>
+                    <p><button class="add-to-cart" >Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item5"><img src="Src/Assets/Lunch/Frys/3-F.jpg" alt="3-fry">
+                    <h1>Pastel de 4 Queijos</h1></a>
+                    <p class="price">R$05,70</p>
+                    <h3>Pastel de quatro queijo com cheddar, mussarela,  catupiri, gorgonzola e parmesão</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item6"><img src="Src/Assets/Lunch/Frys/4-F.jpg" alt="4-fry">
+                    <h1>Pão de Batata</h1></a>
+                    <p class="price">R$04,40</p>
+                    <h3>Pão de batata,recheado com cream cheese</h3>
+                    <p><button class="add-to-cart"">Adicionar ao Carrinho</button></p>
+                </li>
+                
+                <li> <a href="#item7"> <img src="Src/Assets/Lunch/Juice/J-1.jpg" alt="1-juice">
+                    <h1>Suco de Maracuja natural</h1></a>
+                    <p class="price">R$10,10</p>
+                    <p><button class="add-to-cart"">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item8"> <img src="Src/Assets/Lunch/Juice/J-3.jpg" alt="3-juice">
+                    <h1>Suco de abacaxi com hortelã</h1></a>
+                    <p class="price">R$09,10</p>
+                    <p><button class="add-to-cart"">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item09"><img src="Src/Assets/Lunch/Juice/J-2.jpg" alt="2-juice">
+                    <h1>Limonada Suíça</h1></a> 
+                    <p class="price">R$11,10</p>
+                    <p><button class="add-to-cart"">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item10"><img src="Src/Assets/Lunch/Juice/J-4.jpg" alt="4-juice">
+                    <h1>Limonada Pink</h1></a>
+                    <p class="price">R$12,10</p>
+                    <p><button class="add-to-cart"">Adicionar ao Carrinho</button></p>
+                </li>
+                <li class="lunch"> <a href="#item11"> <img src="Src/Assets/Lunch/Lunch/L-1.jpg" alt="1-burguer">
+                    <h1>Kaiser</h1></a>
+                    <p class="price">R$21,25</p>
+                    <h3>Pão, Maionese, Hambúrguer 160g, Queijo prato, Cebola Roxa, Tomate e Alface.</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item12"><img src="Src/Assets/Lunch/Lunch/L-2.jpg" alt="2-burguer">
+                    <h1>Lancelot</h1></a>
+                    <p class="price">R$28,75</p>
+                    <h3>Pão, Burguer 160g, Maionese de ervas, Queijo, 130g de Catupiry ,  Alface e tomate.</h3>
+                    <p><button class="add-to-cart" >Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item13"><img src="Src/Assets/Lunch/Lunch/L-3.jpg" alt="3-burguer">
+                    <h1>King-Bacon</h1></a>
+                    <p class="price">R$26,75</p>
+                    <h3>Pão, Maionese de Ervas e duas camadas de Burguer 160g, Queijo e fatias duplas de Bacon.</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item14"><img src="Src/Assets/Lunch/Lunch/L-4.jpeg" alt="4-burguer">
+                    <h1>Alter</h1></a>
+                    <p class="price">R$24,15</p>
+                    <h3>Pão, Queijo, Frango empanado, Bacon, Cebola Crispy, Salada e Molho Ranch</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item15"><img src="Src/Assets/Lunch/Coffe/1-C.jpg" alt="1-coffe">
+                    <h1>Affogato</h1></a>
+                    <p class="price">R$13,50</p>
+                    <h3>O affogato é uma sobremesa italiana feita à base de café e sorvete</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item16"><img src="Src/Assets/Lunch/Coffe/2-C.jpg" alt="2-coffe">
+                    <h1>Café black</h1></a>
+                    <p class="price">R$04,50</p>
+                    <h3>Cafezinho do dia-dia</h3> 
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item17"><img src="Src/Assets/Lunch/Coffe/3-C.jpg" alt="3-coffe">
+                    <h1>Mocaccino</h1></a>
+                    <p class="price">R$11,90</p>
+                    <h3>O Moca e uma variação de café com leite e creme ou chantily</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+                <li> <a href="#item18"><img src="Src/Assets/Lunch/Coffe/4-C.jpg" alt="4-coffe">
+                    <h1>Café Gelado</h1></a>
+                    <p class="price">R$12,20</p>
+                    <h3>Café com leite e muito gelo,perfeito para o verão</h3>
+                    <p><button class="add-to-cart">Adicionar ao Carrinho</button></p>
+                </li>
+               </ul>
+    </section>
+</main>
+<footer>
+    <p>All Copyrights go to Robo_oh & Dsu_Co. © 2024</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Sitemap</a></li>
+    </ul>
+  </footer>
+
+   
+     
+    
+    <script src="Src/JS/index.js"></script>
+</body>
+</html>
