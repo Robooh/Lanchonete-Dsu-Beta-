@@ -1,66 +1,65 @@
 @media (width < 920px) {
-    .sidebar {
-        width: 140px;
-    }
-    .sidebar button > span {
-        width: 50px ;
-    }
+  .sidebar {
+    width: 140px;
+  }
+  .sidebar button > span {
+    width: 50px;
+  }
 
-    .sidebar button > span > span{
-        opacity: 0;
-        visibility: hidden;
-    }
+  img {
+    width: 110px;
+  }
 
-    img{
-        width: 110px;
-    }
-
-    .main {
-        transition: margin 0.4s;
-        margin-left: 140px;
-    }
-
+  .main {
+    transition: margin 0.4s;
+    margin-left: 140px;
+  }
 }
 
 
 
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
 
 
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
+@media screen and (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  };
+  .card li h1 {
+    font-size: 12px;
+  };
+
+
   
-    .social-media,
-    .rate-us {
+
+    #mySidebar {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
+      height: 100%;
+    };
+
+    #searchInput {
+      font-size: 12px;
+    };
+
+    #cartItems{
+      font-size: 1px;
     }
-  }
 
 
 
 
+    .sidebar button > span > span {
+        font-size: 14px
+    };
 
-
-
-
-
-
-
-  @media screen and (max-width: 600px) {
     footer {
-      flex-direction: column;
+        
+        flex-direction: column;
+        width: 100%;
     }
-  
-    footer ul {
-      margin-top: 10px;
-    }
-  
-    footer form {
-      margin-bottom: 10px;
-    }
-  }
+}
+
+
+
