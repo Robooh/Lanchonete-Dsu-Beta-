@@ -16,36 +16,50 @@
   }
 }
 
+
+
+
+
 @media screen and (max-width: 768px) {
   .card {
     grid-template-columns: 1fr;
-  }
+  };
   .card li h1 {
-    font-size: 12px;
-  }
+    font-size: 12px;  
+  };
 
-  #mySidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 
-  #searchInput {
-    font-size: 12px;
-  }
+  
 
-  #cartItems {
-    font-size: 1px;
-  }
+    #mySidebar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    };
 
-  .sidebar button > span > span {
-    font-size: 14px;
-  }
+    #searchInput {
+      font-size: 12px;
+    };
 
-  footer {
-    flex-direction: column;
-    width: 100%;
-  }
+    #cartItems{
+      font-size: 1px;
+    }
+
+
+
+
+    .sidebar button > span > span {
+        font-size: 14px
+    };
+
+    footer {
+        
+        flex-direction: column;
+        width: 100%;
+    }
 }
+
+
+
